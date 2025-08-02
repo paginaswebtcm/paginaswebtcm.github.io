@@ -11578,7 +11578,7 @@ html {
   font-size: 1.5rem;
 }
 
-.profile {
+/* .profile {
   position: relative;
   height: 75vw;
   width: 75vw;
@@ -11595,6 +11595,70 @@ html {
   left: 50%;
   transform: translateX(-50%);
 }
+.profile .dots-1 {
+  position: absolute;
+  width: 3vw;
+  right: 1.5vw;
+  top: 4vw;
+}
+.profile .dots-1 svg {
+  fill: #fff;
+}
+.profile .dots-2 {
+  position: absolute;
+  width: 3vw;
+  right: -4vw;
+  top: 6.05vw;
+}
+.profile .dots-2 svg {
+  fill: #1e30f3;
+}
+.profile .dots-3 {
+  position: absolute;
+  width: 3vw;
+  left: 1.5vw;
+  bottom: 6.05vw;
+}
+.profile .dots-3 svg {
+  fill: #fff;
+}
+.profile .dots-4 {
+  position: absolute;
+  width: 3vw;
+  left: -4vw;
+  bottom: 4vw;
+}
+.profile .dots-4 svg {
+  fill: #1e30f3;
+} */
+
+.profile {
+  position: relative;
+  height: 75vw;
+  width: 75vw;
+  border-radius: 5vw;
+  margin-top: 5vw;
+  max-height: 40rem;
+  max-width: 40rem;
+  
+  /* Nuevas propiedades para centrar con flexbox */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  overflow: hidden; /* Esto es importante para que la imagen no se salga del contenedor */
+}
+
+.profile .profile-img {
+  /* Propiedades ajustadas para centrar la imagen */
+  height: 80vw;
+  max-height: 45rem;
+  position: relative; /* Cambiado a relativo para que se comporte dentro del flexbox */
+  bottom: auto;
+  left: auto;
+  transform: none; /* Desactivar la transformación anterior */
+}
+
+/* Las clases de los puntos SVG se mantienen igual */
 .profile .dots-1 {
   position: absolute;
   width: 3vw;
