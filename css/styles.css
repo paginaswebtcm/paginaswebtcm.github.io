@@ -3621,7 +3621,8 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
-  font-size: var(--bs-nav-link-font-size);
+  /* font-size: 20px; */
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
   font-weight: var(--bs-nav-link-font-weight);
   color: var(--bs-nav-link-color);
   text-decoration: none;
@@ -11795,4 +11796,8 @@ html {
     width: 1.5vw;
     left: -2vw;
   }
+}
+
+nav ul li a {
+  font-size: 46px;
 }
