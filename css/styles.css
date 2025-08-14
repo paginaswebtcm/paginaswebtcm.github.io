@@ -11801,3 +11801,11 @@ html {
 nav ul li a {
   font-size: 46px;
 }
+
+.darkMode {
+  background-color: #0f0c2e !important;
+}
+
+.darkModeBlue {
+  background-color: #071152 !important;
+}
