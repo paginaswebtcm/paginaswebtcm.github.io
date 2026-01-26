@@ -7039,7 +7039,48 @@ textarea.form-control-lg {
 
 .shadow {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  /* background-color: #001f3f !important; */
+  /* Modo oscuro profesional */
 }
+.darkMode {
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%) !important;
+  color: #e4e4e7 !important;
+}
+
+.darkModeBlue {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%) !important;
+  color: #f1f5f9 !important;
+}
+
+/* Mejoras adicionales para modo oscuro */
+.darkMode .shadow,
+.darkModeBlue .shadow {
+  background-color: rgba(15, 23, 42, 0.95) !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5) !important;
+}
+
+.darkMode .card,
+.darkModeBlue .card {
+  background-color: rgba(30, 41, 59, 0.8) !important;
+  border-color: rgba(71, 85, 105, 0.3) !important;
+  backdrop-filter: blur(10px);
+}
+
+.darkMode .text-muted,
+.darkModeBlue .text-muted {
+  color: #94a3b8 !important;
+}
+
+.darkMode a,
+.darkModeBlue a {
+  color: #60a5fa !important;
+}
+
+.darkMode a:hover,
+.darkModeBlue a:hover {
+  color: #93c5fd !important;
+}
+
 
 .shadow-sm {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
